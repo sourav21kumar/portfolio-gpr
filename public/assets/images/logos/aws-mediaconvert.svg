@@ -1,0 +1,18 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- AWS Elemental MediaConvert: orange + white gear/film icon -->
+  <rect width="48" height="48" rx="7" fill="#E8681A"/>
+  <!-- Gear teeth — 8 rounded rects radiating from centre -->
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(0   24 24)"/>
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(45  24 24)"/>
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(90  24 24)"/>
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(135 24 24)"/>
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(180 24 24)"/>
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(225 24 24)"/>
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(270 24 24)"/>
+  <rect x="21.5" y="8"  width="5" height="8"  rx="2.5" fill="white" transform="rotate(315 24 24)"/>
+  <!-- Gear body ring -->
+  <circle cx="24" cy="24" r="9" fill="white"/>
+  <circle cx="24" cy="24" r="5.5" fill="#E8681A"/>
+  <!-- Play triangle (media symbol) inside gear hole -->
+  <path d="M22 21 L28 24 L22 27Z" fill="white"/>
+</svg>

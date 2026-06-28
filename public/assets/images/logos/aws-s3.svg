@@ -1,0 +1,15 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- AWS S3: Storage green + white bucket/object icon -->
+  <rect width="48" height="48" rx="7" fill="#3F8624"/>
+  <!-- Storage bucket — concave-top cylinder shape -->
+  <!-- Ellipse top opening -->
+  <ellipse cx="24" cy="16" rx="11" ry="4" fill="none" stroke="white" stroke-width="2.5"/>
+  <!-- Bucket body left line -->
+  <line x1="13" y1="16" x2="13" y2="34" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Bucket body right line -->
+  <line x1="35" y1="16" x2="35" y2="34" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Bucket bottom ellipse -->
+  <ellipse cx="24" cy="34" rx="11" ry="4" fill="white" opacity="0.9"/>
+  <!-- Dotted ring on body (S3 characteristic) -->
+  <ellipse cx="24" cy="24" rx="11" ry="4" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 2"/>
+</svg>
