@@ -1,0 +1,12 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Left box -->
+  <rect x="1" y="8" width="7" height="8" rx="1.5" stroke="#a98bff" stroke-width="1.5"/>
+  <!-- Right box -->
+  <rect x="16" y="8" width="7" height="8" rx="1.5" stroke="#a98bff" stroke-width="1.5"/>
+  <!-- Arrow right (request) -->
+  <path d="M8 11H16" stroke="#a98bff" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M13.5 9L16 11L13.5 13" stroke="#a98bff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow left (response) -->
+  <path d="M16 14H8" stroke="#a98bff" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M10.5 12L8 14L10.5 16" stroke="#a98bff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

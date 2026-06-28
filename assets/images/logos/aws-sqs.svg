@@ -1,0 +1,13 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Amazon SQS classic isometric 3D box icon (gold/amber) -->
+  <!-- Top face (lightest) -->
+  <polygon points="10,15  24,7  38,15  24,23" fill="#E8BC44"/>
+  <!-- Left face (darkest shadow) -->
+  <polygon points="10,15  10,35  24,43  24,23" fill="#8C6200"/>
+  <!-- Right/front face (medium gold — most visible) -->
+  <polygon points="24,23  38,15  38,35  24,43" fill="#C49000"/>
+  <!-- Queue message lines on the right face (depth/shadow lines) -->
+  <line x1="27" y1="26.5" x2="36" y2="21"   stroke="#8C6200" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="27" y1="31"   x2="36" y2="25.5" stroke="#8C6200" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="27" y1="35.5" x2="36" y2="30"   stroke="#8C6200" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
