@@ -1,4 +1,4 @@
-import { useReducer, useCallback } from 'react'
+import { useReducer, useCallback, useEffect } from 'react'
 
 import Navbar                from './components/shared/Navbar.jsx'
 import AmbientBackground     from './components/shared/AmbientBackground.jsx'
@@ -64,6 +64,15 @@ export default function App() {
 
   const isDeveloperMode = state.mode === 'dev'
   const isLightTheme    = isDeveloperMode && state.devTheme === 'light'
+
+  useEffect(() => {
+    const link = document.querySelector("link[rel='icon']")
+    if (link) {
+      link.href = isDeveloperMode
+        ? '/assets/images/portrait.jpeg'
+        : '/assets/images/gayani_creator.jpg'
+    }
+  }, [isDeveloperMode])
 
   const switchMode = useCallback(() => {
     if (state.transitioning) return

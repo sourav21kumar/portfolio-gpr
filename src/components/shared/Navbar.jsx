@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const SunIcon = () => (
@@ -31,6 +31,13 @@ export default function Navbar({
   onLogoClick,
 }) {
   const [modeSwitchHovered, setModeSwitchHovered] = useState(false)
+  const [isSmall, setIsSmall] = useState(() => window.innerWidth < 640)
+
+  useEffect(() => {
+    const handler = () => setIsSmall(window.innerWidth < 640)
+    window.addEventListener('resize', handler)
+    return () => window.removeEventListener('resize', handler)
+  }, [])
 
   const firstNameColor = isLightTheme ? '#1a1a1a'              : '#ffffff'
   const lastNameColor  = isLightTheme ? 'rgba(30,30,30,0.52)'  : 'rgba(255,255,255,0.45)'
@@ -86,7 +93,7 @@ export default function Navbar({
             Gayani
           </span>
 
-          {/* Last name — muted, no colour */}
+          {/* Last name */}
           <span
             style={{
               fontFamily:    "'Cormorant Garamond', serif",
@@ -151,8 +158,8 @@ export default function Navbar({
           style={{
             display:        'flex',
             alignItems:     'center',
-            gap:            10,
-            padding:        '9px 9px 9px 18px',
+            gap:            isSmall ? 6 : 10,
+            padding:        isSmall ? '6px 6px 6px 11px' : '9px 9px 9px 18px',
             borderRadius:   999,
             border:         '1px solid var(--border2)',
             background:     modeSwitchHovered ? 'rgba(255,255,255,.12)' : 'var(--glass-soft)',
@@ -160,22 +167,22 @@ export default function Navbar({
             cursor:         isTransitioning ? 'default' : 'pointer',
             color:          'var(--text)',
             fontFamily:     "'Sora', sans-serif",
-            fontSize:       13,
+            fontSize:       isSmall ? 11 : 13,
             fontWeight:     500,
             transition:     '.3s',
             transform:      modeSwitchHovered ? 'translateY(-1px)' : 'none',
           }}
         >
-          <span>{switchLabel}</span>
+          <span>{isSmall ? switchLabel.replace(' Mode', '') : switchLabel}</span>
           <span
             style={{
-              width:      30,
-              height:     30,
+              width:        isSmall ? 24 : 30,
+              height:       isSmall ? 24 : 30,
               borderRadius: '50%',
-              display:    'grid',
-              placeItems: 'center',
-              background: switchOrbGradient,
-              boxShadow:  '0 4px 16px rgba(0,0,0,.4)',
+              display:      'grid',
+              placeItems:   'center',
+              background:   switchOrbGradient,
+              boxShadow:    '0 4px 16px rgba(0,0,0,.4)',
             }}
           >
             <ArrowIcon />
