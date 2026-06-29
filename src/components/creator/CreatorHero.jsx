@@ -202,7 +202,7 @@ export default function CreatorHero({ onSwitchMode }) {
             transform: backBtnHovered ? 'translateY(-2px)' : 'none',
           }}
         >
-          ← Back to her code
+          ← Meet the developer behind the stories
         </button>
       </RevealWrapper>
     </section>

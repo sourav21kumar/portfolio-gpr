@@ -41,31 +41,6 @@ function FeaturedPostCard({ post }) {
       }}
       className="hover-lift-strong"
     >
-      {/* Rank badge header */}
-      <div style={{
-        display: 'flex', alignItems: 'center',
-        padding: '10px 14px',
-        background: '#07000f',
-        borderBottom: '1px solid rgba(255,255,255,.07)',
-        flexShrink: 0,
-      }}>
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', gap: 6,
-          padding: '4px 12px',
-          borderRadius: 999,
-          background: 'linear-gradient(95deg, #feda75, #ff2d8e)',
-          boxShadow: '0 4px 14px rgba(255,45,142,.4)',
-        }}>
-          <PlayTriangle />
-          <span style={{
-            fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 11, fontWeight: 700, color: '#fff',
-          }}>
-            #{post.rank} most watched
-          </span>
-        </div>
-      </div>
-
       {/* Clipped viewport — hides Instagram header and bottom action bar */}
       <div style={{ position: 'relative', overflow: 'hidden', height: VIDEO_H, flexShrink: 0 }}>
         <iframe
@@ -172,7 +147,7 @@ export default function FeaturedPosts({ posts }) {
             marginBottom: 12,
           }}
         >
-          Featured · most watched
+          Featured · close to heart
         </div>
         <h2
           style={{
@@ -184,7 +159,7 @@ export default function FeaturedPosts({ posts }) {
             color: '#fff',
           }}
         >
-          The reels they watched most
+          Stories closest to my heart
         </h2>
       </RevealWrapper>
 
